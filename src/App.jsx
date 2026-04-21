@@ -1527,9 +1527,11 @@ function ROICalculator() {
   const stockDormant = Math.round(inputs.valeurStock * 0.10 * 0.50);
   // 2. Commandes inutiles évitées : 2% du stock total / an
   const commandesEvitees = Math.round(inputs.valeurStock * 0.02);
-  // 3. Marges optimisées : +20% d'amélioration de la marge actuelle sur le CA OTC
-  //    => caOtc × tauxMarge × 20%   (un meilleur taux de marge = plus de gain)
-  const margesGain = Math.round(inputs.caOtc * margeCoef * 0.20);
+  // 3. Marges optimisées : on ramène la pharmacie vers un taux de marge cible (32%)
+  //    Plus la marge actuelle est faible, plus le potentiel de gain est élevé
+  const margeCible = 0.32;
+  const margeGap = Math.max(0, margeCible - margeCoef);
+  const margesGain = Math.round(inputs.caOtc * margeGap);
   // 4. Ruptures évitées : 90% des ruptures × panier moyen × marge réelle
   //    (le gain par rupture évitée = marge récupérée, pas le CA brut)
   const rupturesGain = Math.round(inputs.nbRuptures * inputs.panierMoyen * margeCoef * 0.90);
