@@ -1542,7 +1542,7 @@ function ROICalculator() {
   const tempsGain = 7800;
 
   const totalGain = stockDormant + commandesEvitees + margesGain + rupturesGain + peremptionsGain + prixGain + tempsGain;
-  const abonnementAnnuel = 1188;
+  const abonnementAnnuel = 4800;
   const beneficNet = totalGain - abonnementAnnuel;
   const roiMultiple = (totalGain / abonnementAnnuel).toFixed(1);
 
