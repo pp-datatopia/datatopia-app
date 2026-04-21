@@ -1745,7 +1745,7 @@ function TabROI() {
         <div style={{ textAlign: "right" }}>
           <div style={{ fontSize: 12, color: C.gray, marginBottom: 4 }}>Pour un abonnement de</div>
           <div style={{ fontSize: 22, fontWeight: 700, color: C.white }}>€4 800<span style={{ fontSize: 13, color: C.gray, fontWeight: 400 }}> / an</span></div>
-          <div style={{ fontSize: 11, color: C.green, marginTop: 2 }}>→ ROI estimé × 20 à × 40</div>
+          <div style={{ fontSize: 11, color: C.green, marginTop: 2 }}>→ ROI estimé × 10 à × 30</div>
         </div>
       </div>
 
