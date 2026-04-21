@@ -1437,7 +1437,7 @@ const ROI_PAIRS = [
       icon: "⚡", figure: "< 6 semaines", label: "de payback moyen", color: C.green,
       pitch: "Retour sur investissement ultra-rapide",
       bullets: [
-        "Abonnement Starter : 99€/mois HT. Soit €1 188 / an.",
+        "Abonnement Starter : 400€/mois HT. Soit €4 800 / an.",
         "Premier gain identifié en moyenne dès le 1er mois : €600 à €800 sur le stock mort seul",
         "Cumul des gains année 1 (stock + marges + temps) : entre €25 000 et €50 000 selon la taille de l'officine",
         "ROI année 1 estimé : entre 20x et 40x l'investissement dans la plateforme",
@@ -1744,7 +1744,7 @@ function TabROI() {
         </div>
         <div style={{ textAlign: "right" }}>
           <div style={{ fontSize: 12, color: C.gray, marginBottom: 4 }}>Pour un abonnement de</div>
-          <div style={{ fontSize: 22, fontWeight: 700, color: C.white }}>€1 188<span style={{ fontSize: 13, color: C.gray, fontWeight: 400 }}> / an</span></div>
+          <div style={{ fontSize: 22, fontWeight: 700, color: C.white }}>€4 800<span style={{ fontSize: 13, color: C.gray, fontWeight: 400 }}> / an</span></div>
           <div style={{ fontSize: 11, color: C.green, marginTop: 2 }}>→ ROI estimé × 20 à × 40</div>
         </div>
       </div>
